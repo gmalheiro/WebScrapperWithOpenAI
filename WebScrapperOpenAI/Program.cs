@@ -9,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.AddChatGpt();
 
 builder.Services.AddScoped<IWebScrapper,WebScrapperBusiness>();
+builder.Services.AddScoped<IRandomNumberBusiness, RandomNumberBusiness>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
